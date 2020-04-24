@@ -1,0 +1,22 @@
+version: '3.6'
+
+services:
+    postgresql_db:
+        container_name: postgresql_${PROJECT_USER}
+        image: postgres:12.1
+        ports:
+            - ${DB_EXTERNAL_PORT}:${DB_INTERNAL_PORT}
+    python:
+        container_name: python_${PROJECT_USER}
+        build:
+            context: ./misc/dockerfiles/python
+            dockerfile: Dockerfile
+        env_file:
+            - .env
+        volumes:
+            - ./data:/App/data
+            - ./code:/App/code
+            - ./misc:/App/misc
+            - ./artifacts:/App/artifacts
+        depends_on:
+            - postgresql_db

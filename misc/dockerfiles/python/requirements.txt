@@ -1,0 +1,7 @@
+numpy==1.18.1
+pandas==0.25.3
+psycopg2==2.8.5
+spacy==2.2.4
+scikit-learn==0.22.2
+tensorflow==2.1.0
+tensorflow_cpu==2.1.0
