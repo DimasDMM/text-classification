@@ -1,4 +1,4 @@
-# Text classification [WIP]
+# Text classification
 
 ## Introduction
 
@@ -16,10 +16,12 @@ Source: http://mlg.ucd.ie/datasets/bbc.html - D. Greene and P. Cunningham. "Prac
 
 I have split the repository in several notebooks:
 - [Data Analysis and Preprocess](./notebooks/Data-Analysis-and-Preprocess.ipynb)
-- [Training with LSTM](./notebooks/Training-with-LSTM.ipynb) - This notebook is also available in [Kaggle](https://www.kaggle.com/dimasmunoz/text-classification-with-lstm).
-- [Training with SVM](./notebooks/Training-with-SVM.ipynb)
+- [Training with LSTM](./notebooks/Training-with-LSTM.ipynb) - A simplified version is available at [Kaggle](https://www.kaggle.com/dimasmunoz/simple-text-classification-with-lstm).
+- [Training with SVM](./notebooks/Training-with-SVM.ipynb) - A simplified version is available at [Kaggle](https://www.kaggle.com/dimasmunoz/simple-text-classification-with-svm).
 
 ## Commands
+
+> Note: These commands have been tested in MacOS
 
 You can control the docker containers with these two commands:
 ```sh
@@ -27,11 +29,24 @@ sh manager.sh docker:run
 sh manager.sh docker:down
 ```
 
-And you can open the Python container with this command:
+Now, you have two commands that you can use to train the model and to make predictions:
+```sh
+sh manager.sh train
+sh manager.sh predict "Write your text here..."
+```
+
+And one additional command to enter to the Python container:
 ```sh
 sh manager.sh python
 ```
 
-**WIP**
+For example, let's make a prediction:
+```sh
+$ sh manager.sh predict "A text about tennis"
+INFO:root:Applying char cleaner...
+INFO:root:Applying lemmatization...
+INFO:root:Loading model "svm"...
+sport
+```
 
 Have fun! ᕙ (° ~ ° ~)

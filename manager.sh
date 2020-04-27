@@ -13,6 +13,12 @@ case $1 in
   python)
     ${MANAGER_DIR}/misc/bin/python-container.sh
     ;;
+  train)
+    ${MANAGER_DIR}/misc/bin/python-container.sh train
+    ;;
+  predict)
+    ${MANAGER_DIR}/misc/bin/python-container.sh predict "$2"
+    ;;
   *)
     echo "Error: The command does not exist!!"
     exit 1

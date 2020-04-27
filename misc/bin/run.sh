@@ -3,8 +3,6 @@
 SCRIPT_PATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 source ${SCRIPT_PATH}/environment-vars.sh
 
-echo "## RUN DOCKER ##"
-
 $SCRIPT_PATH/down.sh
 
 cd $SCRIPT_PATH/../../
