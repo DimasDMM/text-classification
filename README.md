@@ -14,9 +14,10 @@ Source: http://mlg.ucd.ie/datasets/bbc.html - D. Greene and P. Cunningham. "Prac
 
 ## Notebooks
 
-I have split the repository in several notebooks, depending on the target:
+I have split the repository in several notebooks:
 - [Data Analysis and Preprocess](./notebooks/Data-Analysis-and-Preprocess.ipynb)
-- **WIP** [Training with LSTM](./notebooks/Training-with-LSTM.ipynb)
+- [Training with LSTM](./notebooks/Training-with-LSTM.ipynb) - This notebook is also available in [Kaggle](https://www.kaggle.com/dimasmunoz/text-classification-with-lstm).
+- [Training with SVM](./notebooks/Training-with-SVM.ipynb)
 
 ## Commands
 
