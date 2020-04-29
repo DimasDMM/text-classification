@@ -12,7 +12,7 @@ class DBConnection:
         self.__connection = pg.connect(
             host = self.__connection_data['host'],
             port = self.__connection_data['port'],
-            dbname = self.__connection_data['database'],
+            dbname = self.__connection_data['dbname'],
             user = self.__connection_data['user']
         )
         self.__logging.info("Connection created!")

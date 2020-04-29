@@ -19,6 +19,8 @@ I have split the repository in several notebooks:
 - [Training with LSTM](./notebooks/Training-with-LSTM.ipynb) - A simplified version is available at [Kaggle](https://www.kaggle.com/dimasmunoz/simple-text-classification-with-lstm).
 - [Training with SVM](./notebooks/Training-with-SVM.ipynb) - A simplified version is available at [Kaggle](https://www.kaggle.com/dimasmunoz/simple-text-classification-with-svm).
 
+> **Important**: The LSTM model uses pre-trained vectors from the Glove project. If you want to use that model, first you must download the set `GloVe 6B` and place the file `glove.6B.100d.txt` in the path `./data/glove.6B/glove.6B.100d.txt`. See https://nlp.stanford.edu/projects/glove/
+
 ## Commands
 
 > Note: These commands have been tested in MacOS

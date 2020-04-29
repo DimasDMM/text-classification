@@ -14,7 +14,7 @@ def train(logging):
     connection_data = {
         'host': os.environ['DB_HOST'],
         'port': os.environ['DB_INTERNAL_PORT'],
-        'database': os.environ['DB_DATABASE'],
+        'dbname': os.environ['DB_DBNAME'],
         'user': os.environ['DB_USER']
     }
     

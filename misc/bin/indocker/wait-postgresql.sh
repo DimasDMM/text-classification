@@ -1,6 +1,6 @@
-#!/usr/bin/env sh
+#!/bin/bash
 
-echo "Waiting for Postgresql to be ready..."
+echo "Connection to Postgresql..."
 sleep 5
 
 while ! pg_isready -h $DB_HOST -p $DB_INTERNAL_PORT -U $DB_USER --quiet
